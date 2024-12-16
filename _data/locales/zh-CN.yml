@@ -18,9 +18,12 @@ tabs:
 
 # the text displayed in the search bar & search results
 search:
-  hint: 搜索
-  cancel: 取消
-  no_results: 搜索结果为空
+  hint: 搜点什么好呢
+  cancel: 不想搜了
+  no_results: >-
+    你搜了什么呀，这对……对……对吗？🤔
+    对的？不对！是不是输错了？😰
+    检查一下关键词试试~🤓👆
 
 panel:
   lastmod: 最近更新
@@ -31,21 +34,29 @@ copyright:
   # Shown at the bottom of the post
   license:
     template: 本文由作者按照 :LICENSE_NAME 进行授权
-    name: CC BY 4.0
-    link: https://creativecommons.org/licenses/by/4.0/
+    name: CC BY-NC-SA 4.0
+    link: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
   # Displayed in the footer
-  brief: 保留部分权利。
   verbose: >-
-    除非另有说明，本网站上的博客文章均由作者按照知识共享署名 4.0 国际 (CC BY 4.0) 许可协议进行授权。
+    除非另有说明，本网站上的博客文章均由作者按照 CC BY-NC-SA 4.0 进行授权
+  brief: >-
+    保留部分权利
+    （CC BY-NC-SA 4.0）
+    <img style="height:13px!important;margin-left:2px;vertical-align:middle;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+    <img style="height:13px!important;margin-left:2px;vertical-align:middle;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+    <img style="height:13px!important;margin-left:2px;vertical-align:middle;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+    <img style="height:13px!important;margin-left:2px;vertical-align:middle;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
 
-meta: 本站采用 :PLATFORM 主题 :THEME
+meta: 基于 :PLATFORM 主题 :THEME 搭建
 
 not_found:
-  statement: 抱歉，我们放错了该 URL，或者它指向了不存在的内容。
+  statement: >-
+    这里什么都没有，你可以尝试访问正确的地址🤔
+    如果您在正常浏览时看到此页面，可以拷打我修复这个问题😰
 
 notification:
-  update_found: 发现新版本的内容。
+  update_found: 发现新版本的内容
   update: 更新
 
 # ----- Posts related labels -----
@@ -65,10 +76,10 @@ post:
     next: 下一篇
     previous: 上一篇
     copy_code:
-      succeed: 已复制！
+      succeed: 复制成功！
     share_link:
       title: 分享链接
-      succeed: 链接已复制！
+      succeed: 链接复制成功！
 
 # Date time format.
 # See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>
