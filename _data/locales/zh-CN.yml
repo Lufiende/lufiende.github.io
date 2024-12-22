@@ -14,7 +14,8 @@ tabs:
   categories: 分类
   tags: 标签
   archives: 归档
-  about: 关于
+  about: 个人信息
+  friends: 好朋友
 
 # the text displayed in the search bar & search results
 search:

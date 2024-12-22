@@ -1,3 +1,6 @@
+kramdown:
+  input: GFM
+
 # The Site Configuration
 
 # Import the theme
@@ -86,6 +89,7 @@ analytics:
 # Page views settings
 pageviews:
   provider: lufiende # now only supports 'goatcounter'
+
 
 # Prefer color scheme setting.
 #
