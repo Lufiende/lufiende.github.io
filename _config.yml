@@ -1,6 +1,3 @@
-kramdown:
-  input: GFM
-
 # The Site Configuration
 
 # Import the theme
@@ -121,6 +118,11 @@ social_preview_image: # string, local or CORS resources
 # boolean type, the global switch for TOC in posts.
 toc: true
 
+toc:
+  min_level: 1
+  max_level: 6
+  ordered_list: false
+
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
   provider: # [disqus | utterances | giscus]
@@ -169,6 +171,7 @@ baseurl: ""
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
+  markdown: kramdown
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
   syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
