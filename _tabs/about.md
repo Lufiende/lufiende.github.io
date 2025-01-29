@@ -2,6 +2,7 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+sitemap: false
 ---
 
 孩子们，这不对，我是错的，<br>
