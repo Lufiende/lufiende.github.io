@@ -37,7 +37,7 @@ wsl --update
 
 使用微软商店是最简单的方式，直接打开 `Microsoft Store` 搜索 `Kali Linux` 下载安装并打开
 
-<img src="https://webimage.lufiende.work/1737128108720.png" style="zoom: 50%;" alt="加载失败" />
+<img src="https://webimage.lufiende.work/1737128108720.png" style="zoom: 50%;" alt="文章配图" />
 
 ### 2-2 使用命令行
 
@@ -56,7 +56,7 @@ wsl.exe --install <发行版名称>
 
 安装即可
 
-<img src="https://webimage.lufiende.work/1737128950654.png" alt="{CBE6E768-1BCC-4869-82D5-984D1C9FD922}" style="zoom:80%;" />
+<img src="https://webimage.lufiende.work/1737128950654.png" alt="Feel free to surf to my weblog, which focuses on CTF science and fun gadgets!" style="zoom:80%;" />
 
 ### 2-2 直接安装 & 手动解压打开
 
@@ -64,21 +64,21 @@ wsl.exe --install <发行版名称>
 
 下载 Kali Linux 的 Appx 可以在 [Microsoft Store - Generation Project (v1.2.3)](https://store.rg-adguard.net/) 中下载，你只需要粘贴微软官方商店页面链接就可以下载了，本体在 `Appxbundle` 中
 
-<img src="https://webimage.lufiende.work/1737128117890.png" style="zoom: 33%;" alt="加载失败" />
+<img src="https://webimage.lufiende.work/1737128117890.png" style="zoom: 33%;" alt="文章配图" />
 
 下载好以后可以**双击安装**，当然，用压缩软件打开发现以下文件
 
-<img src="https://webimage.lufiende.work/1737128117801.png" style="zoom:50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737128117801.png" style="zoom:50%;" alt="文章配图"/>
 
 选择最下面的 x64 并再次用压缩软件打开（除非你真的用 ARM 架构的 Windows），并挑个好位置解压，文件夹里面应该有下面的文件，到此就算安装完毕了，只需要启动 `kali.exe` 就可以进行初始化
 
-<img src="https://webimage.lufiende.work/1737128119640.png" style="zoom:50%;" alt="加载失败" />
+<img src="https://webimage.lufiende.work/1737128119640.png" style="zoom:50%;" alt="文章配图" />
 
 ## 3. 配置 Kali
 
 第一次打开需要输入用户名和密码，按提示设置即可，设置完会出现下面的东西，以防万一还是提醒一下**你看不到你输入的密码**
 
-<img src="https://webimage.lufiende.work/1737128129203.png" style="zoom: 50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737128129203.png" style="zoom: 50%;" alt="文章配图"/>
 
 意思是 WSL 安装 Kali 都是以最小化模式安装的，并没有附带 Kali 的哪些强大的工具包，接下来就是去安装那些包的过程，安装的包叫 **`Metapackages`**，就是一次能安很多包的包，为了以后的方便，我们需要安装一些初始工具包，让 Kali 更加完整，我们会在下面指导这部分的安装内容，安装完后会**自动消失**
 
@@ -90,11 +90,11 @@ touch ~/.hushlogin
 
 如果你开着一些代理软件，你可能会发现，他会告诉你诸如 Nat 模式无法使用代理等等的提醒，这个时候你可以尝试去改动一些 WSL 的设置，如果你开着 Windows 的更新，你大抵是可以在开始菜单看到这个
 
-![image-20250118001152381](https://webimage.lufiende.work/1737130332291.png)
+![文章配图](https://webimage.lufiende.work/1737130332291.png)
 
 你可以参考我的设置，我放到了下面，如果你没有看到这个，你可以去用户目录下（`C:\Users\xxx`）新建一个 `.wslconfig` 文件写入配置，具体配置写法可以参照：[WSL 中的高级设置配置 &#124; Microsoft Learn](https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config)（事实上能改的不止这一个，还有`wsl.conf`，`.wslgconfig` 等）我也会把配置文件的示例附上
 
-<img src="https://webimage.lufiende.work/1737512217400.png" alt="image-20250122101654131" style="zoom:50%;" />
+<img src="https://webimage.lufiende.work/1737512217400.png" alt="文章配图" style="zoom:50%;" />
 
 配置文件内容如下~~（实际就是个配置文件生成器）~~
 
@@ -105,7 +105,7 @@ networkingMode=mirrored
 hostAddressLoopback=true
 ```
 
-<img src="https://webimage.lufiende.work/1737131544524.png" alt="image-20250118003219105" style="zoom:50%;" />
+<img src="https://webimage.lufiende.work/1737131544524.png" alt="文章配图" style="zoom:50%;" />
 
 最关键的其实是这个 **`Mirrored`** 的网络模式，你可以理解为子系统和虚拟机融合了一样，共用本地回环地址和端口，十分方便，也能直接引用系统代理
 
@@ -120,11 +120,11 @@ sudo dpkg-reconfigure locales
 
 看介绍，这是要生成不同地区使用语言的区域设置，用滚轮或者上下键选择语言，这里以防万一可以全选，也可以拉下去只选 `zh_CN.UTF-8 UTF-8 和 en_US.UTF-8 UTF-8`，然后回车
 
-<img src="https://webimage.lufiende.work/1737128132119.png" style="zoom:50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737128132119.png" style="zoom:50%;" alt="文章配图"/>
 
 回车后，接下来是选择默认语言，选择 `zh_CN.UTF-8` 就可以，~~除非你是罕见~~，**选完之后关掉现在的终端**，重启或者 logout 也行，重新打开就能看见效果，~~比如看看 apt 的超级牛力~~
 
-<img src="https://webimage.lufiende.work/1737131754130.png" alt="image-20250118003548020" style="zoom:50%;" />
+<img src="https://webimage.lufiende.work/1737131754130.png" alt="文章配图" style="zoom:50%;" />
 
 ### 3-2 安装 Kali 提供的 MetaPackages
 
@@ -144,7 +144,7 @@ kali-tweaks
 
 然后就会出现
 
-<img src="https://webimage.lufiende.work/1737128136898.png" style="zoom:50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737128136898.png" style="zoom:50%;" alt="文章配图"/>
 
 第二项就是我们要安装的 `Metapackages` 了，这里我放出来了官方的描述
 
@@ -156,13 +156,13 @@ kali-tweaks
 
 一般选圈住的第一个的 `kali-linux-default`，这里我考虑到可能用不到图形化界面所以选择了 `kali-linux-headless`，如果喜欢一步到位可以选择 `kali-linux-large`，如果有特殊需求可以结合官网安装其他的包
 
-<img src="https://webimage.lufiende.work/1737128139600.png" style="zoom:50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737128139600.png" style="zoom:50%;" alt="文章配图"/>
 
 ### 3-3 其他在 kali-tweaks 的修改
 
 #### 3-3-1 Shell & Prompt
 
-![image-20250118004737613](https://webimage.lufiende.work/1737132462764.png)
+![文章配图](https://webimage.lufiende.work/1737132462764.png)
 
 `Configure Prompt` 用于调整终端的主题样式，可以自行摸索
 
@@ -172,7 +172,7 @@ kali-tweaks
 
 #### 3-3-2 Network Repositories
 
-![image-20250118005155331](https://webimage.lufiende.work/1737132721076.png)
+![文章配图](https://webimage.lufiende.work/1737132721076.png)
 
 `Additional Kali repositories` 别选，选的人自然会选，~~各位师傅你也不想因为一些包不稳定的更新而崩溃吧~~
 
@@ -182,7 +182,7 @@ kali-tweaks
 
 #### 3-3-3 Hardening Settings
 
-![image-20250118210643306](https://webimage.lufiende.work/1737205612577.png)
+![文章配图](https://webimage.lufiende.work/1737205612577.png)
 
 `Kernel settings` 涉及到关于 `dmesg` 命令的使用权限以及 `特权端口` 选项的开关，这个根据需要配置，~~你当个赛棍还管这么多，又用不到~~
 
@@ -202,7 +202,7 @@ sudo apt install wget git curl
 
 点击 install oh-my-zsh 之后，页面会自动滚到下载连接页
 
-<img src="https://webimage.lufiende.work/1737128141105.png" style="zoom:50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737128141105.png" style="zoom:50%;" alt="文章配图"/>
 
 ```shell
 # 复制下载链接（注意时效性，二选一）
@@ -214,7 +214,7 @@ sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/ins
 
 效果如下图
 
-<img src="https://webimage.lufiende.work/1737211784903.png" alt="image-20250118224942007" style="zoom: 50%;" />
+<img src="https://webimage.lufiende.work/1737211784903.png" alt="文章配图" style="zoom: 50%;" />
 
 #### 3-4-2 安装前置字体
 
@@ -240,7 +240,7 @@ Powerline 仓库： [powerline/fonts: Patched fonts for Powerline users.](https:
 
 Nerd 字体安装只需要下载字体安装即可，有些主题可能会指定下面的其中一种
 
-<img src="https://webimage.lufiende.work/1737128149188.png" style="zoom:50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737128149188.png" style="zoom:50%;" alt="文章配图"/>
 
 Powerline 的话克隆一下仓库安装就行（Windows 下）
 
@@ -252,9 +252,9 @@ cd .\fonts\
 
 由于通常使用子系统会使用 Windows Terminal ，所以我们需要在 Windows Terminal 进行一些配置
 
-<img src="https://webimage.lufiende.work/1737128153963.png" style="zoom:50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737128153963.png" style="zoom:50%;" alt="文章配图"/>
 
-<img src="https://webimage.lufiende.work/1737128156563.png" style="zoom:50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737128156563.png" style="zoom:50%;" alt="文章配图"/>
 
 选择安装的字体就可以了，图片仅作示例
 
@@ -262,7 +262,7 @@ cd .\fonts\
 
 完成这些工作，你可以在官网的 Themes 找到各种主题
 
-<img src="https://webimage.lufiende.work/1737128143715.png" style="zoom:50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737128143715.png" style="zoom:50%;" alt="文章配图"/>
 
 当然也可以自行在搜索引擎上寻找自己喜欢的主题
 
@@ -284,17 +284,17 @@ git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$H
 
 编辑 `~/.zshrc` 并找到  `ZSH_THEME` , 改为 `"powerlevel10k/powerlevel10k"`.
 
-<img src="https://webimage.lufiende.work/1737263051193.png" alt="image-20250119130400714" style="zoom:67%;" />
+<img src="https://webimage.lufiende.work/1737263051193.png" alt="文章配图" style="zoom:67%;" />
 
 这个主题第一次运行会有一个引导初始化设置的界面，如果不小心关掉或者想尝试一些别的设置可以使用 `p10k configure` 再次启动
 
-<img src="https://webimage.lufiende.work/1737263399147.png" alt="image-20250119130957483" style="zoom:67%;" />
+<img src="https://webimage.lufiende.work/1737263399147.png" alt="文章配图" style="zoom:67%;" />
 
 #### 3-4-4 启用一些喜欢的 `oh-my-zsh` 插件
 
 zsh 内置了许多丰富的插件，查看可以在 `$ZSH/plugins/` 下查看
 
-<img src="https://webimage.lufiende.work/1737215502179.png" style="zoom: 50%;" alt="加载失败"/>
+<img src="https://webimage.lufiende.work/1737215502179.png" style="zoom: 50%;" alt="文章配图"/>
 
 网络上也有许多优秀的插件，比如 `zsh-syntax-highlighting`，链接：https://github.com/zsh-users/zsh-syntax-highlighting
 
@@ -358,7 +358,7 @@ plugins=(
 
 如果你认为不需要的话可以忽略，在文章编写日期时，使用 `pip` 安装的时候记得加上 `--break-system-packages` ，不然就会出现图像里面的状况
 
-<img src="https://webimage.lufiende.work/1737265305080.png" alt="image-20250119134143194" style="zoom: 50%;" />
+<img src="https://webimage.lufiende.work/1737265305080.png" alt="文章配图" style="zoom: 50%;" />
 
 ### 4-2 安装 Anconda（Miniconda）并创建一个专用的 Python 环境
 
@@ -376,7 +376,7 @@ chmod 777
 
 我们还可以在阅读完用户协议后定义安装路径
 
-<img src="https://webimage.lufiende.work/1737270712877.png" alt="image-20250119151151460" style="zoom:67%;" />
+<img src="https://webimage.lufiende.work/1737270712877.png" alt="文章配图" style="zoom:67%;" />
 
 安装完后记得**重启 `zsh`**
 
@@ -399,7 +399,7 @@ python
 from pwn import *
 ```
 
-<img src="https://webimage.lufiende.work/1737271618600.png" alt="image-20250119152657311" style="zoom:67%;" />
+<img src="https://webimage.lufiende.work/1737271618600.png" alt="文章配图" style="zoom:67%;" />
 
 ### 4-4 安装 GDB 以及 `Pwndbg` / `Pwngdb` / `peda` /` gef `
 
@@ -441,7 +441,7 @@ cd gdb321
 
 在文件夹中有一个 `submodule` 文件夹，内有三个插件的目录
 
-![image-20250119170347023](https://webimage.lufiende.work/1737277430151.png)
+![文章配图](https://webimage.lufiende.work/1737277430151.png)
 
 我们可以先在四个文件夹中克隆四个库
 
@@ -623,11 +623,11 @@ ln -s /path/to/libc-database/db /path/to/LibcSearcher/libc-database/db
 
 首先，确保宿主机安装了 `VSCode` ，并且安装了 `WSL 插件` 
 
-![image-20250121181223598](https://webimage.lufiende.work/1737454345525.png)
+![文章配图](https://webimage.lufiende.work/1737454345525.png)
 
 尝试在 `VSCode` 中连接一下当前的虚拟机，点左边下面的 `><` 点 `连接到wsl`
 
-![image-20250122094504515](https://webimage.lufiende.work/1737510315405.png)
+![文章配图](https://webimage.lufiende.work/1737510315405.png)
 
 或者，尝试在虚拟机中使用
 

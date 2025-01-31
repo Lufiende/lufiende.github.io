@@ -3,9 +3,28 @@ permalink: /robots.txt
 # The robots rules
 ---
 
-User-agent: *
+User-agent: Baiduspider
+Disallow: 
 
+User-agent: Bingbot
+Disallow: 
+
+User-agent: Googlebot
+Disallow: 
+
+User-agent: DuckDuckGoBot
+Disallow: 
+
+User-agent: *
+Disallow: /
+
+Crawl-delay: 120
+Disallow: /friends/
+Disallow: /tags/
+Disallow: /archives/
+Disallow: /categories/
 Disallow: /norobots/
 Disallow: /assets/
+Disallow: /google41b9aedb324a5cd5
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
