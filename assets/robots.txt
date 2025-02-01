@@ -4,21 +4,19 @@ permalink: /robots.txt
 ---
 
 User-agent: Baiduspider
-Disallow: 
+Allow: /posts/
 
 User-agent: Bingbot
-Disallow: 
+Allow: /posts/
 
 User-agent: Googlebot
-Disallow: 
+Allow: /posts/
 
 User-agent: DuckDuckGoBot
-Disallow: 
+Allow: /posts/
 
 User-agent: *
 Disallow: /
-
-Crawl-delay: 120
 Disallow: /friends/
 Disallow: /tags/
 Disallow: /archives/
@@ -26,5 +24,6 @@ Disallow: /categories/
 Disallow: /norobots/
 Disallow: /assets/
 Disallow: /google41b9aedb324a5cd5
+Disallow: /baidu_verify_codeva-uuKV4u6DrT
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
