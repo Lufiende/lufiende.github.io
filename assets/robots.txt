@@ -5,25 +5,21 @@ permalink: /robots.txt
 
 User-agent: Baiduspider
 Allow: /posts/
+Disallow: /
 
 User-agent: Bingbot
 Allow: /posts/
+Disallow: /
 
 User-agent: Googlebot
 Allow: /posts/
+Disallow: /
 
 User-agent: DuckDuckGoBot
 Allow: /posts/
+Disallow: /
 
 User-agent: *
 Disallow: /
-Disallow: /friends/
-Disallow: /tags/
-Disallow: /archives/
-Disallow: /categories/
-Disallow: /norobots/
-Disallow: /assets/
-Disallow: /google41b9aedb324a5cd5
-Disallow: /baidu_verify_codeva-uuKV4u6DrT
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
