@@ -23,7 +23,7 @@ tags: [CTF 相关, Pwn - 二进制安全 , 西湖论剑 , WriteUp]
 
 接下来通过初步运行程序和审阅代码发现，题目使用了 `C++` 来恶心选手并且使用了 `Vector 容器` 
 
- <img src="https://webimage.lufiende.work/1738665856587.png" style="zoom: 80%;" />
+ <img src="https://webimage.lufiende.work/1738665856587.png"alt="image-20250204185632290" style="zoom: 80%;" />
 
 由于 `Canary` 的存在，理论上，我们无法单纯通过添加数字覆盖返回地址而不触发保护，并且修改值的函数中有简单的检测，无法直接修改返回地址之类的位置
 
