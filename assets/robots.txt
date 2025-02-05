@@ -3,55 +3,16 @@ permalink: /robots.txt
 # The robots rules
 ---
 
-User-agent: Baiduspider
-Disallow: /about/
-Disallow: /archives/
-Disallow: /assets/
-Disallow: /categories/
-Disallow: /friends/
-Disallow: /norobots/
-Disallow: /tags/
-Disallow: /404
-Disallow: /google41b9aedb324a5cd5
-Disallow: /baidu_verify_codeva-uuKV4u6DrT
-
-User-agent: Bingbot
-Disallow: /about/
-Disallow: /archives/
-Disallow: /assets/
-Disallow: /categories/
-Disallow: /friends/
-Disallow: /norobots/
-Disallow: /tags/
-Disallow: /404
-Disallow: /google41b9aedb324a5cd5
-Disallow: /baidu_verify_codeva-uuKV4u6DrT
-
-User-agent: Googlebot
-Disallow: /about/
-Disallow: /archives/
-Disallow: /assets/
-Disallow: /categories/
-Disallow: /friends/
-Disallow: /norobots/
-Disallow: /tags/
-Disallow: /404
-Disallow: /google41b9aedb324a5cd5
-Disallow: /baidu_verify_codeva-uuKV4u6DrT
-
-User-agent: DuckDuckGoBot
-Disallow: /about/
-Disallow: /archives/
-Disallow: /assets/
-Disallow: /categories/
-Disallow: /friends/
-Disallow: /norobots/
-Disallow: /tags/
-Disallow: /404
-Disallow: /google41b9aedb324a5cd5
-Disallow: /baidu_verify_codeva-uuKV4u6DrT
-
 User-agent: *
-Disallow: /
+Disallow: /about/
+Disallow: /archives/
+Disallow: /assets/
+Disallow: /categories/
+Disallow: /friends/
+Disallow: /norobots/
+Disallow: /tags/
+Disallow: /404
+Disallow: /google41b9aedb324a5cd5
+Disallow: /baidu_verify_codeva-uuKV4u6DrT
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
