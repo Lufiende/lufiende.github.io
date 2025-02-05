@@ -4,20 +4,52 @@ permalink: /robots.txt
 ---
 
 User-agent: Baiduspider
-Allow: /posts/
-Disallow: /
+Disallow: /about/
+Disallow: /archives/
+Disallow: /assets/
+Disallow: /categories/
+Disallow: /friends/
+Disallow: /norobots/
+Disallow: /tags/
+Disallow: /404
+Disallow: /google41b9aedb324a5cd5
+Disallow: /baidu_verify_codeva-uuKV4u6DrT
 
 User-agent: Bingbot
-Allow: /posts/
-Disallow: /
+Disallow: /about/
+Disallow: /archives/
+Disallow: /assets/
+Disallow: /categories/
+Disallow: /friends/
+Disallow: /norobots/
+Disallow: /tags/
+Disallow: /404
+Disallow: /google41b9aedb324a5cd5
+Disallow: /baidu_verify_codeva-uuKV4u6DrT
 
 User-agent: Googlebot
-Allow: /posts/
-Disallow: /
+Disallow: /about/
+Disallow: /archives/
+Disallow: /assets/
+Disallow: /categories/
+Disallow: /friends/
+Disallow: /norobots/
+Disallow: /tags/
+Disallow: /404
+Disallow: /google41b9aedb324a5cd5
+Disallow: /baidu_verify_codeva-uuKV4u6DrT
 
 User-agent: DuckDuckGoBot
-Allow: /posts/
-Disallow: /
+Disallow: /about/
+Disallow: /archives/
+Disallow: /assets/
+Disallow: /categories/
+Disallow: /friends/
+Disallow: /norobots/
+Disallow: /tags/
+Disallow: /404
+Disallow: /google41b9aedb324a5cd5
+Disallow: /baidu_verify_codeva-uuKV4u6DrT
 
 User-agent: *
 Disallow: /

@@ -8,13 +8,13 @@ sitemap: false
 
 <div class="friends-container">
   <div class="friend-link">
-    <a href="https://example.com" target="_blank">
+    <a href="https://aniale.top/" target="_blank">
       <div class="avatar">
-        <img src="https://example.com/avatar.jpg" alt="待添加">
+        <img src="https://aniale.top/img/avatar.jpg" alt="待添加">
       </div>
       <div class="info">
-        <div class="name">待添加</div>
-        <div class="description">待添加</div>
+        <div class="name">Aniale</div>
+        <div class="description">Web✌</div>
       </div>
     </a>
   </div>
