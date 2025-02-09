@@ -1,6 +1,4 @@
 # The Site Configuration
-plugins:
-  - jekyll-sitemap
 
 # Import the theme
 theme: jekyll-theme-chirpy
@@ -31,7 +29,7 @@ tagline: >- # it will display as the subtitle
   ——艾伦·走路人
 
 description: >- # used by seo meta and the atom feed
-  这里主要介绍 CTF 与有趣的小玩意！Focuses on CTF and fun gadgets!
+  介绍 CTF 与其他有趣的东西！Focuses on CTF and fun gadgets!
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://blog.lufiende.work"
@@ -58,11 +56,11 @@ social:
 
 # Site Verification Settings
 webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
+  google: nz2O6LpSzheK2rsNQV4vVFc2_EBgbEfBb73IrRKXP4s
+  bing: 3867B8D1D9ABBAEF75D81FDD7600CE08
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
+  baidu: 615248826d4e4eb65d2bf6af50119395
   facebook: # fill in your Facebook verification code
 
 # ↑ --------------------------
@@ -123,7 +121,7 @@ toc: true
 toc:
   min_level: 1
   max_level: 6
-  ordered_list: false
+  ordered_list: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
@@ -173,7 +171,7 @@ baseurl: ""
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
-  markdown: kramdown
+  markdown: GFM
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
   syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
@@ -211,6 +209,21 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  - scope:
+      path: ""
+      type: categories
+    values:
+      sitemap: false
+  - scope:
+      path: ""
+      type: tags
+    values:
+      sitemap: false
+  - scope:
+      path: ""
+      type: archive
+    values:
+      sitemap: false
 
 sass:
   style: compressed
