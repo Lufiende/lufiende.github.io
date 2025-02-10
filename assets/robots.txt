@@ -11,6 +11,13 @@ Disallow: /categories/
 Disallow: /friends/
 Disallow: /norobots/
 Disallow: /tags/
+Disallow: /404/
+Disallow: /about
+Disallow: /archives
+Disallow: /assets
+Disallow: /categories
+Disallow: /friends
+Disallow: /norobots
+Disallow: /tags
 Disallow: /404
 
-Sitemap: {{ '/sitemap-index.xml' | absolute_url }}
